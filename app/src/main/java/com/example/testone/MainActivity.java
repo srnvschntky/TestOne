@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
 
         if (flag[0] == true) {
 
-            Intent intent =new Intent(getApplicationContext(), NextActivity.class);
+            Intent intent =new Intent(getApplicationContext(), MapsActivity.class);
             startActivity(intent);
             finish();
 
@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
 
                     editor.putBoolean("key", flag[0]);
                     editor.apply();
-                    Intent intent = new Intent(getApplicationContext(), NextActivity.class);
+                    Intent intent = new Intent(getApplicationContext(), MapsActivity.class);
                     startActivity(intent);
 
                 }else {

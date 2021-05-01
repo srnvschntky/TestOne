@@ -5,7 +5,6 @@
     android:layout_height="wrap_content"
     android:layout_margin="5dp">
 
-
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -18,118 +17,206 @@
             android:gravity="center"
             android:orientation="horizontal">
 
-            <LinearLayout
-                android:id="@+id/card_Linear"
+            <RelativeLayout
+                android:id="@+id/relative"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:gravity="center"
-                android:orientation="vertical"
-                android:padding="5dp">
+                android:layout_margin="5dp">
 
                 <TextView
                     android:id="@+id/user"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
                     android:text="User"
-                    android:textSize="16sp"
+                    android:textSize="12sp"
                     android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/name"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Name"
-                    android:textSize="16sp" />
+                    android:layout_below="@+id/user"
+                    android:text="Name:"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/name1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/name"
+                    android:layout_toRightOf="@+id/name"
+                    android:text="00.00000"
+                    android:textSize="12sp" />
+
 
                 <TextView
                     android:id="@+id/username"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="username"
-                    android:textSize="16sp" />
+                    android:layout_below="@+id/name"
+                    android:text="username:"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/username1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/username"
+                    android:layout_toRightOf="@+id/username"
+                    android:text="00.00000"
+                    android:textSize="12sp" />
 
 
                 <TextView
                     android:id="@+id/email"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="email"
-                    android:textSize="16sp" />
+                    android:layout_below="@+id/username"
+                    android:text="email:"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/email1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/email"
+                    android:layout_toRightOf="@+id/email"
+                    android:text="00.00000"
+                    android:textSize="12sp" />
 
 
-            </LinearLayout>
+            </RelativeLayout>
 
-            <LinearLayout
-                android:id="@+id/card_Linear2"
+            <RelativeLayout
+                android:id="@+id/relative2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="6dp"
-                android:gravity="center"
-                android:orientation="vertical"
-                android:padding="5dp">
+
+                android:layout_margin="5dp">
 
                 <TextView
                     android:id="@+id/address"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
                     android:text="Address"
-                    android:textSize="16sp"
+                    android:textSize="12sp"
                     android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/street"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="street"
-                    android:textSize="16sp" />
+                    android:layout_below="@+id/address"
+                    android:text="street:"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/street1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/street"
+                    android:layout_toRightOf="@+id/street"
+                    android:text="00.00000"
+                    android:textSize="12sp" />
 
                 <TextView
                     android:id="@+id/city"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="city"
-                    android:textSize="16sp" />
+                    android:layout_below="@+id/street"
+                    android:text="city:"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/city1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/city"
+                    android:layout_toRightOf="@+id/city"
+                    android:text="00.00000"
+                    android:textSize="12sp" />
 
 
                 <TextView
                     android:id="@+id/zipcode"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Address"
-                    android:textSize="16sp" />
-            </LinearLayout>
+                    android:layout_below="@+id/city"
+                    android:text="zipcode:"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
 
-            <LinearLayout
+                <TextView
+                    android:id="@+id/zipcode1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/zipcode"
+                    android:layout_toRightOf="@+id/zipcode"
+                    android:text="00.00000"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
                 android:id="@+id/card_Linear3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="6dp"
-                android:gravity="center"
-                android:orientation="vertical"
-                android:padding="5dp">
+                android:layout_margin="5dp"
+
+                >
 
                 <TextView
                     android:id="@+id/geo"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
                     android:text="Location"
-                    android:textSize="16sp"
+                    android:textSize="12sp"
                     android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/lat"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="lattitude"
-                    android:textSize="16sp" />
+                    android:text="lattitude:"
+                    android:layout_below="@+id/geo"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/lat1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/lat"
+                    android:layout_toRightOf="@+id/lat"
+                    android:text="00.00000"
+                    android:textSize="12sp" />
 
                 <TextView
                     android:id="@+id/lon"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="longitude"
-                    android:textSize="16sp" />
-            </LinearLayout>
+                    android:text="longitude:"
+                    android:layout_below="@+id/lat"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/lon1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/lon"
+                    android:layout_toRightOf="@+id/lon"
+                    android:text="00.00000"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
 
 
         </LinearLayout>

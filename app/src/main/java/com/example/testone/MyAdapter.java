@@ -45,33 +45,33 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder>{
 
     class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
 
-        TextView name,username, email ,street ,city ,zipcode ,lat ,lon;
+        TextView name1,username1, email1 ,street1 ,city1 ,zipcode1 ,lat1 ,lon1;
 
 
 
 
         public ViewHolder(@NonNull View itemView){
             super(itemView);
-            name = itemView.findViewById(R.id.name);
-            username = itemView.findViewById(R.id.username);
-            email = itemView.findViewById(R.id.email);
-            street = itemView.findViewById(R.id.street);
-            city = itemView.findViewById(R.id.city);
-            zipcode = itemView.findViewById(R.id.zipcode);
-            lat = itemView.findViewById(R.id.lat);
-            lon = itemView.findViewById(R.id.lon);
+            name1 = itemView.findViewById(R.id.name1);
+            username1 = itemView.findViewById(R.id.username1);
+            email1 = itemView.findViewById(R.id.email1);
+            street1 = itemView.findViewById(R.id.street1);
+            city1 = itemView.findViewById(R.id.city1);
+            zipcode1 = itemView.findViewById(R.id.zipcode1);
+            lat1 = itemView.findViewById(R.id.lat1);
+            lon1 = itemView.findViewById(R.id.lon1);
 
         }
 
         public void setData(UserModel card) {
-            name.setText(card.name.toString());
-            username.setText(card.username.toString());
-            email.setText(card.email.toString());
-            street.setText(card.address.street.toString());
-            city.setText(card.address.city.toString());
-            zipcode.setText(card.address.zipcode.toString());
-            lat.setText(card.address.geo.lat.toString());
-            lon.setText(card.address.geo.lng.toString());
+            name1.setText(card.name.toString());
+            username1.setText(card.username.toString());
+            email1.setText(card.email.toString());
+            street1.setText(card.address.street.toString());
+            city1.setText(card.address.city.toString());
+            zipcode1.setText(card.address.zipcode.toString());
+            lat1.setText(card.address.geo.lat.toString());
+            lon1.setText(card.address.geo.lng.toString());
 
 
                 itemView.setOnClickListener(this);

@@ -28,25 +28,10 @@ public class NextActivity extends AppCompatActivity implements MyAdapter.OnItemC
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_next);
-        RecyclerView recyclerView = findViewById(R.id.recyclerView);
 
 
-        APIService apiService = RetroInstance.getRetroClient().create(APIService.class);
-        Call<List<UserModel>> call = apiService.getUserList();
-        call.enqueue(new Callback<List<UserModel>>() {
-            @Override
-            public void onResponse(Call<List<UserModel>> call, Response<List<UserModel>> response) {
-                userlist = response.body();
-                adapter =new  MyAdapter(userlist,NextActivity.this::onItemClick);
-                adapter.notifyDataSetChanged();
-                recyclerView.setAdapter(adapter);
-            }
 
-            @Override
-            public void onFailure(Call<List<UserModel>> call, Throwable t) {
 
-            }
-        });
 
 
 
